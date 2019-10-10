@@ -19,7 +19,7 @@ if [[ $1 = o ]]
 then
 	for i in "display" "audio" "media"
 	do
-		rm -rf harware/qcom/$i-caf/$CHIP
+		rm -rf hardware/qcom/$i-caf/$CHIP
 		git clone $GIT -b q-$i hardware/qcom/$i-caf/$CHIP
 	done
 fi
